@@ -1,0 +1,166 @@
+/* Global */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+h3 {
+  max-width: 900px;
+}
+
+/* Header */
+
+#header {
+  height: 60px;
+  background: #295f4a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Headline Section */
+
+#headline-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+#headline-section h2 {
+  margin-top: 30px;
+}
+
+#headline-section h3 {
+  font-weight: normal;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+/* Bulletpoints */
+#bulletpoints {
+  padding: 20px 0;
+}
+.bulletpoints-container ul {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bulletpoints-container h2 {
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bulletpoints-container li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  text-align: center;
+}
+
+.bulletpoints-container span {
+  font-size: 50px;
+  color: #295f4a;
+}
+
+/* Guarantee */
+#guarantee {
+  background: #295f4a;
+  padding: 30px;
+}
+
+.guarantee-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.guarantee-container img {
+  width: 200px;
+}
+
+.guarantee-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 320px;
+}
+
+.guarantee-container p {
+  font-size: 14px;
+}
+
+/* Faq Section */
+
+#faq-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+#faq-container {
+  width: 330px;
+}
+
+.question-container {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer-container {
+  display: none;
+}
+
+.answer-container-open {
+  display: block;
+  margin: 20px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  /* Header */
+  h2 {
+    font-size: 20px;
+  }
+
+  #header {
+    font-size: 20px;
+  }
+
+  /* Guarantee */
+  .guarantee-container div {
+    text-align: center;
+  }
+}
