@@ -26,9 +26,8 @@ h3 {
   align-items: center;
   background-color: #282c34;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   color: #ffffff;
-  font-family: 'Arial', sans-serif;
+  font-family: 'inter', sans-serif;
 }
 
 .countdown {
