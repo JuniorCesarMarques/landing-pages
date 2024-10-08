@@ -15,7 +15,7 @@ h2 {
 }
 
 h3 {
-  max-width: 900px;
+  margin: 0 30px;
 }
 
 /* Header */
@@ -50,6 +50,34 @@ h3 {
 
 .highlight {
   font-weight: bold;
+}
+
+/* Button */
+.buy-button {
+  display: block;
+  margin: 20px auto;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background: #295f4a;
+  color: white;
+}
+
+/* Problema */
+.problem-solution-container {
+  text-align: center;
+}
+
+.problem-solution-container h3 {
+  margin: 30px;
+}
+
+.problem-solution-container h2{
+  color: white;
+  background: #295f4a;
+  padding: 15px 0;
 }
 
 /* Bulletpoints */
@@ -109,6 +137,10 @@ h3 {
   flex-direction: column;
   gap: 5px;
   width: 320px;
+}
+
+.guarantee-container h3 {
+  margin: 0;
 }
 
 .guarantee-container p {
