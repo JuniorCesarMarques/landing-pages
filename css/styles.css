@@ -145,6 +145,63 @@ h3 {
   color: #295f4a;
 }
 
+/* Oferta */
+
+.offer-container {
+  text-align: center;
+  margin: 20px auto;
+  background: #f4eee7;
+  width: 550px;
+  padding: 20px;
+}
+
+.offer-container ul {
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.offer-container ul span {
+  color: white;
+  background: #42ae30;
+  border-radius: 3px;
+
+}
+
+.offer-container li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.prices-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.offer-container .old-price {
+  text-decoration: line-through;
+}
+
+.old-price-container {
+  font-size: 20px;
+}
+
+.new-price-container {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.new-price {
+  background: #42ae30;
+  color: white;
+}
+
+.one-payment {
+  font-size: 20px;
+}
+
 /* Guarantee */
 #guarantee {
   background: #295f4a;
@@ -254,6 +311,16 @@ h3 {
 
   #header {
     font-size: 20px;
+  }
+
+  /* Botão */
+  .buy-button {
+    font-size: 12px;
+  }
+
+  /* Oferta */
+  .offer-container {
+    width: 330px;
   }
 
   /* Guarantee */
