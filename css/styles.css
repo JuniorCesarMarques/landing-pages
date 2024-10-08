@@ -16,6 +16,7 @@ h2 {
 
 h3 {
   margin: 0 30px;
+  font-weight: normal;
 }
 
 /* Header */
@@ -71,6 +72,7 @@ h3 {
 }
 .info-container h3 {
   margin: 30px;
+
 }
 
 .info-container h2{
@@ -96,6 +98,10 @@ h3 {
   margin: 20px 0;
   text-align: center;
   text-transform: uppercase;
+}
+
+.bulletpoints-container h3 {
+  font-weight: bold;
 }
 
 .bulletpoints-container li {
