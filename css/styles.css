@@ -19,6 +19,34 @@ h3 {
   font-weight: normal;
 }
 
+/* contagem regressiva */
+#countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaçamento entre a contagem e a data */
+}
+
+.time {
+  font-size: 36px; /* Tamanho da contagem regressiva */
+  font-weight: bold;
+}
+
+.date {
+  font-size: 18px; /* Tamanho da data */
+  opacity: 0.8; /* Um pouco de transparência na data */
+}
+
 /* Header */
 
 #header {

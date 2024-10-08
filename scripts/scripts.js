@@ -125,3 +125,64 @@ const names = ['Ana terapeuta', 'Sonia', 'Maria', 'Priscila', 'Carla', 'Fernanda
 const popup = new PopupNotification(names, 10000, 20000); // Primeiro após 10 seg, próximos a cada 20 seg
 popup.start();
 
+// Countdown
+class CountdownTimer {
+  constructor(containerId, durationInSeconds) {
+    this.container = document.getElementById(containerId);
+    this.duration = durationInSeconds; // Duração em segundos
+    this.intervalId = null;
+
+    this.createElements();
+    this.updateCurrentDate();
+    this.startCountdown();
+  }
+
+  // Cria os elementos HTML para a contagem e a data
+  createElements() {
+    this.countdownElement = document.createElement('div');
+    this.countdownElement.className = 'countdown';
+
+    this.timeElement = document.createElement('span');
+    this.timeElement.className = 'time';
+    this.countdownElement.appendChild(this.timeElement);
+
+    this.dateElement = document.createElement('span');
+    this.dateElement.className = 'date';
+    this.countdownElement.appendChild(this.dateElement);
+
+    this.container.appendChild(this.countdownElement);
+  }
+
+  // Formata o tempo em mm:ss
+  formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
+  }
+
+  // Atualiza a data atual
+  updateCurrentDate() {
+    const currentDate = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    this.dateElement.textContent = currentDate.toLocaleDateString('pt-BR', options);
+  }
+
+  // Inicia a contagem regressiva
+  startCountdown() {
+    this.timeElement.textContent = this.formatTime(this.duration);
+    this.intervalId = setInterval(() => {
+      if (this.duration <= 0) {
+        clearInterval(this.intervalId);
+        this.timeElement.textContent = "00:00";
+      } else {
+        this.timeElement.textContent = this.formatTime(this.duration);
+        this.duration -= 1;
+      }
+    }, 1000);
+  }
+}
+
+// Inicializa a contagem regressiva com 14 minutos e 47 segundos
+const countdown = new CountdownTimer('countdown-container', 14 * 60 + 47);
+
+
