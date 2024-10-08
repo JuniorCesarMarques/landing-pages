@@ -152,6 +152,38 @@ h3 {
   font-size: 14px;
 }
 
+/* Pop-up */
+.popup-notification {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #42ae30; /* Fundo roxo elegante */
+  color: white;
+  padding: 15px 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0.95;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Animação de fade-in para o pop-up */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0.95;
+    transform: translateY(0);
+  }
+}
+
+
 /* Faq Section */
 
 #faq-section {
