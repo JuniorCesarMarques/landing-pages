@@ -185,7 +185,6 @@ h3 {
 /* Videos */
 
 #videos-section h2 {
-  margin-bottom: 20px;
   text-align: center;
   width: 100%;
   background: #295f4a;
@@ -196,21 +195,13 @@ h3 {
 .video-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
   flex-wrap: wrap;
 }
 
-iframe {
-  margin-bottom: 20px;
-  width: 350px;
-  height: 315px; /* Ajusta a altura proporcionalmente */
+.video-container iframe {
+  padding: 20px;
 }
 
-@media (max-width: 768px) {
-  .video-container {
-    flex: 1 1 100%; /* Os vídeos ocuparão 100% da largura em telas menores */
-  }
-}
 
 /* Oferta */
 
