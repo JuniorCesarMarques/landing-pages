@@ -27,7 +27,8 @@ h3 {
   background-color: #282c34;
   padding: 20px;
   color: #ffffff;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
+  margin-bottom: 20px;
 }
 
 .countdown {
@@ -99,10 +100,9 @@ h3 {
 }
 .info-container h3 {
   margin: 30px;
-
 }
 
-.info-container h2{
+.info-container h2 {
   color: white;
   background: #295f4a;
   padding: 15px 0;
@@ -144,33 +144,125 @@ h3 {
   color: #295f4a;
 }
 
+/* Visual bulletpoints */
+#visual-bulletpoints {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#visual-bulletpoints h2 {
+  width: 100%;
+  color: white;
+  background: #295f4a;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
 /* Oferta */
 
+#offer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.offer-container {
+  position: relative;
+}
+
+.forever-access {
+  color: white;
+  padding: 5px;
+  background: purple;
+  position: absolute;
+  top: 99px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.super-offer-text {
+  background: #42ae30;
+  padding: 20px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.best-seller {
+  transform: rotate(-35deg);
+  padding: 10px;
+  background: yellow;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  top: 20px;
+  left: -50px;
+  width: 200px;
+}
+
+.simple-offer-container,
 .offer-container {
   text-align: center;
-  margin: 20px auto;
   background: #f4eee7;
   width: 550px;
+}
+
+.simple-offer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
-.offer-container ul {
+.simple-offer {
+  font-size: 30px;
+}
+
+
+.offer-container ul,
+.simple-offer-container ul {
   display: inline-block;
   margin: 20px auto;
 }
 
-.offer-container ul span {
+.offer-container ul {
+  margin-top: 30px;
+}
+
+.offer-container ul span, 
+.simple-offer-container ul span{
   color: white;
   background: #42ae30;
   border-radius: 3px;
-
 }
 
-.offer-container li {
+.simple-offer-container ul .close {
+  background: red;
+  color: white;
+}
+
+.offer-container li,
+.simple-offer-container li {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 5px;
+}
+
+.simple-offer-buy-button {
+  border: none;
+  padding: 10px;
+  background: #295f4a;
+  margin: 0 auto;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .prices-container {
@@ -205,6 +297,7 @@ h3 {
 #guarantee {
   background: #295f4a;
   padding: 30px;
+  margin-top: 20px;
 }
 
 .guarantee-container {
@@ -267,7 +360,6 @@ h3 {
   }
 }
 
-
 /* Faq Section */
 
 #faq-section {
@@ -318,8 +410,22 @@ h3 {
   }
 
   /* Oferta */
-  .offer-container {
+  #offer {
+    gap: 20px;
+  }
+
+  .super-offer-text h2 {
+    margin: 10px 0;
+  }
+
+  .forever-access {
+    top: 135px;
+  }
+
+  .offer-container,
+  .simple-offer-container {
     width: 330px;
+    margin: 0;
   }
 
   /* Guarantee */

@@ -139,70 +139,107 @@
         </ul>
       </div>
     </section>
+    <!-- Bullet points visual -->
+    <section id="visual-bulletpoints">
+      <h2>
+        Template únicos e exclusivos 100% editáveis <br />
+        em 2 cores diferentes (verde e azul)
+      </h2>
+      <h3>
+        Mais de 300 artes em 3 formatos diferente 1080x1080 (Feed) - 1080x1350
+        (Retrato) - 1080x1920 (Stories) + Legendas Prontas + 40 Destaques
+      </h3>
+      <picture>
+        <!-- Imagem para telas com largura de até 768px -->
+        <source media="(max-width: 768px)" srcset="./assets/bulletpoints-mobile.png">
+        
+        <!-- Imagem para telas com largura acima de 768px -->
+        <source media="(min-width: 769px)" srcset="/assets/bulletpoints.png">
+        
+        <!-- Fallback caso as media queries não funcionem -->
+        <img src="imagem-padrao.jpg" alt="Imagem condicional">
+      </picture>
+      
+    </section>
+    <!-- Cronometro -->
+    <div id="countdown-container"></div>
     <!-- Oferta -->
     <section id="offer">
-      <div id="countdown-container"></div>
-      <div class="offer-container">
-        <h2>Oferta especial <br> por tempo limitado</h2>
+      <div class="simple-offer-container">
+        <h2>Plano simples</h2>
+        <p class="simple-offer">R$ 9,90</p>
         <ul>
           <li>
-            <span class="material-symbols-outlined">
-              check
-              </span>
-              <p>50 artes para o feed.</p>
+            <span class="material-symbols-outlined"> check </span>
+            <p>30 artes</p>
           </li>
           <li>
-            <span class="material-symbols-outlined">
-              check
-              </span>
-              <p>50 artes para o feed.</p>
+            <span class="material-symbols-outlined close"> close </span>
+            <p>Nenhum bônus</p>
           </li>
           <li>
-            <span class="material-symbols-outlined">
-              check
-              </span>
-              <p>50 artes para o feed.</p>
+            <span class="material-symbols-outlined close"> close </span>
+            <p>Não tem atualização</p>
           </li>
           <li>
-            <span class="material-symbols-outlined">
-              check
-              </span>
-              <p>50 artes para o feed.</p>
+            <span class="material-symbols-outlined close"> close </span>
+            <p>Acesso por 30 dias</p>
+          </li>
+        </ul>
+        <button class="simple-offer-buy-button">Comprar</button>
+      </div>
+      <div class="offer-container">
+        <div class="super-offer-text">
+          <span class="best-seller">mais vendido</span>
+          <h2>Super oferta!</h2>
+          <h3>pacote SUPER PREMIUM com COMBO EXCLUSIVO!</h3>
+        </div>
+        <span class="forever-access">Acesso vitalício</span>
+        <ul>
+          <li>
+            <span class="material-symbols-outlined"> check </span>
+            <p>50 artes para o feed.</p>
           </li>
           <li>
-            <span class="material-symbols-outlined">
-              check
-              </span>
-              <p>50 artes para o feed.</p>
+            <span class="material-symbols-outlined"> check </span>
+            <p>50 artes para o feed.</p>
           </li>
           <li>
-            <span class="material-symbols-outlined">
-              check
-              </span>
-              <p>50 artes para o feed.</p>
+            <span class="material-symbols-outlined"> check </span>
+            <p>50 artes para o feed.</p>
           </li>
           <li>
-            <span class="material-symbols-outlined">
-              check
-              </span>
-              <p>50 artes para o feed.</p>
+            <span class="material-symbols-outlined"> check </span>
+            <p>50 artes para o feed.</p>
           </li>
           <li>
-            <span class="material-symbols-outlined">
-              check
-              </span>
-              <p>50 artes para o feed.</p>
+            <span class="material-symbols-outlined"> check </span>
+            <p>50 artes para o feed.</p>
           </li>
           <li>
-            <span class="material-symbols-outlined">
-              check
-              </span>
-              <p>50 artes para o feed.</p>
+            <span class="material-symbols-outlined"> check </span>
+            <p>50 artes para o feed.</p>
+          </li>
+          <li>
+            <span class="material-symbols-outlined"> check </span>
+            <p>50 artes para o feed.</p>
+          </li>
+          <li>
+            <span class="material-symbols-outlined"> check </span>
+            <p>50 artes para o feed.</p>
+          </li>
+          <li>
+            <span class="material-symbols-outlined"> check </span>
+            <p>50 artes para o feed.</p>
           </li>
         </ul>
         <div class="prices-container">
-          <p class="old-price-container">De <span class="old-price">R$ 159,90</span> por apenas</p>
-          <p class="new-price-container">6x de <span class="new-price">R$ 8,84</span></p>
+          <p class="old-price-container">
+            De <span class="old-price">R$ 159,90</span> por apenas
+          </p>
+          <p class="new-price-container">
+            6x de <span class="new-price">R$ 8,84</span>
+          </p>
           <p class="one-payment">Ou a vista por R$ 47,90</p>
         </div>
         <button class="buy-button">Sim, eu quero essa transformação!</button>
