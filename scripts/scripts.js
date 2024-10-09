@@ -120,7 +120,7 @@ class PopupNotification {
 
 // Array de nomes
 const names = [
-  "Ana terapeuta",
+  "Ana",
   "Sonia",
   "Maria",
   "Priscila",

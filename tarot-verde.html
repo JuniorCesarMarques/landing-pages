@@ -39,16 +39,7 @@
     <button class="buy-button">Sim, eu quero essa transformação!</button>
     <!-- Problema -->
     <section id="problem">
-      <picture>
-        <!-- Imagem para telas com largura de até 768px -->
-        <source media="(max-width: 768px)" srcset="./assets/purple-section/purple-banner-mobile.png">
-        
-        <!-- Imagem para telas com largura acima de 768px -->
-        <source media="(min-width: 769px)" srcset="/assets/purple-section/purple-banner.png">
-        
-        <!-- Fallback caso as media queries não funcionem -->
-        <img src="imagem-padrao.jpg" alt="Imagem condicional">
-      </picture>
+      <img src="./assets/purple-section/purple-banner.png" alt="">
       <div class="info-container">
         <h3>
           Tarólogas enfrentam dificuldade em criar uma presença digital
@@ -60,8 +51,10 @@
     </section>
     <!-- Solução -->
     <section id="solution">
+      <picture>
+        <!-- Imagem para telas com largura de até 768px -->
+        <img src="./assets/blue-section/blue-banner.png">
       <div class="info-container">
-        <h2>Conteúdo simplificado</h2>
         <h3>
           O Presença Digital Mística simplifica a criação de conteúdos visuais
           para tarólogos, oferecendo artes 100% editáveis no Canva, guias de
@@ -74,21 +67,21 @@
     </section>
     <!-- Promessa -->
     <section id="promise">
+      <img src="./assets/promise-section/promise-banner.png">
       <div class="info-container">
-        <h2>Promessa</h2>
         <h3>
-          O Presença Digital Mística proporciona melhoria imediata e aumento
-          de engajamento e atração de novos clientes em poucas semanas, mesmo
-          que não saibam como criar postagens atraentes, sem ter que investir
-          muito tempo e dinheiro, através de uma solução prática com artes
-          editáveis e guias de impulsionamento e engajamento.
+          O Presença Digital Mística proporciona melhoria imediata e aumento de
+          engajamento e atração de novos clientes em poucas semanas, mesmo que
+          não saibam como criar postagens atraentes, sem ter que investir muito
+          tempo e dinheiro, através de uma solução prática com artes editáveis e
+          guias de impulsionamento e engajamento.
         </h3>
       </div>
     </section>
     <!-- Pra quem é -->
-    <section class="who-for">
+    <section id="who-for">
+      <img src="./assets//who-for/who-for.png">
       <div class="info-container">
-        <h2>Pra quem é:</h2>
         <h3>
           Você é um tarólogo ou consultor espiritual que luta para aumentar sua
           visibilidade nas redes sociais e atrair mais clientes. Apesar de seu
@@ -160,15 +153,20 @@
       </h3>
       <picture>
         <!-- Imagem para telas com largura de até 768px -->
-        <source media="(max-width: 768px)" srcset="./assets/bulletpoints/bulletpoints-mobile.png">
-        
+        <source
+          media="(max-width: 768px)"
+          srcset="./assets/bulletpoints/bulletpoints-mobile.png"
+        />
+
         <!-- Imagem para telas com largura acima de 768px -->
-        <source media="(min-width: 769px)" srcset="/assets/bulletpoints/bulletpoints.png">
-        
+        <source
+          media="(min-width: 769px)"
+          srcset="/assets/bulletpoints/bulletpoints.png"
+        />
+
         <!-- Fallback caso as media queries não funcionem -->
-        <img src="imagem-padrao.jpg" alt="Imagem condicional">
+        <img src="imagem-padrao.jpg" alt="Imagem condicional" />
       </picture>
-      
     </section>
     <!-- Cronometro -->
     <div id="countdown-container"></div>
