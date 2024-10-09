@@ -183,21 +183,26 @@ h3 {
 }
 
 /* Videos */
-#videos-section {
-  margin: 0 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px; /* Espaçamento entre os vídeos */
+
+#videos-section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  background: #295f4a;
+  color: white;
+  padding: 30px;
 }
 
 .video-container {
-  flex: 1 1 30%; /* Largura mínima de 30%, ajustável */
-  min-width: 300px; /* Largura mínima do vídeo */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 iframe {
-  width: 100%;
+  margin-bottom: 20px;
+  width: 350px;
   height: 315px; /* Ajusta a altura proporcionalmente */
 }
 
