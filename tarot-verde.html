@@ -15,7 +15,7 @@
   <body>
     <!-- Header -->
     <header id="header">
-      <h2>Promoção por tempo limitado</h2>
+      <h2>Atualizado em</h2>
     </header>
     <!-- Headline Section -->
     <section id="headline-section">
@@ -39,8 +39,17 @@
     <button class="buy-button">Sim, eu quero essa transformação!</button>
     <!-- Problema -->
     <section id="problem">
+      <picture>
+        <!-- Imagem para telas com largura de até 768px -->
+        <source media="(max-width: 768px)" srcset="./assets/purple-section/purple-banner-mobile.png">
+        
+        <!-- Imagem para telas com largura acima de 768px -->
+        <source media="(min-width: 769px)" srcset="/assets/purple-section/purple-banner.png">
+        
+        <!-- Fallback caso as media queries não funcionem -->
+        <img src="imagem-padrao.jpg" alt="Imagem condicional">
+      </picture>
       <div class="info-container">
-        <h2>Engajamento falhou:</h2>
         <h3>
           Tarólogas enfrentam dificuldade em criar uma presença digital
           autêntica e constante por falta de conhecimento em marketing e design.
@@ -151,10 +160,10 @@
       </h3>
       <picture>
         <!-- Imagem para telas com largura de até 768px -->
-        <source media="(max-width: 768px)" srcset="./assets/bulletpoints-mobile.png">
+        <source media="(max-width: 768px)" srcset="./assets/bulletpoints/bulletpoints-mobile.png">
         
         <!-- Imagem para telas com largura acima de 768px -->
-        <source media="(min-width: 769px)" srcset="/assets/bulletpoints.png">
+        <source media="(min-width: 769px)" srcset="/assets/bulletpoints/bulletpoints.png">
         
         <!-- Fallback caso as media queries não funcionem -->
         <img src="imagem-padrao.jpg" alt="Imagem condicional">
