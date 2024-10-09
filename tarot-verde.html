@@ -39,7 +39,16 @@
     <button class="buy-button">Sim, eu quero essa transformação!</button>
     <!-- Problema -->
     <section id="problem">
-      <img src="./assets/purple-section/purple-banner.png" alt="">
+      <picture>
+
+        <source media="(max-width: 769px)" srcset="./assets/purple-section/purple-banner-mobile.png">
+        
+        <source media="(min-width: 768px)" srcset="./assets/purple-section/purple-banner.png">
+        
+        <!-- Imagem padrão se nenhuma das condições acima for atendida -->
+        <img src="imagem-padrao.jpg" alt="Descrição da imagem">
+      </picture>
+      
       <div class="info-container">
         <h3>
           Tarólogas enfrentam dificuldade em criar uma presença digital
@@ -51,9 +60,16 @@
     </section>
     <!-- Solução -->
     <section id="solution">
+          <section id="problem">
       <picture>
-        <!-- Imagem para telas com largura de até 768px -->
-        <img src="./assets/blue-section/blue-banner.png">
+        
+        <source media="(max-width: 769px)" srcset="./assets/blue-section/blue-banner-mobile.png">
+        
+        <source media="(min-width: 768px)" srcset="./assets/blue-section/blue-banner.png">
+        
+        <!-- Imagem padrão se nenhuma das condições acima for atendida -->
+        <img src="imagem-padrao.jpg" alt="Descrição da imagem">
+      </picture>
       <div class="info-container">
         <h3>
           O Presença Digital Mística simplifica a criação de conteúdos visuais
@@ -167,6 +183,32 @@
         <!-- Fallback caso as media queries não funcionem -->
         <img src="imagem-padrao.jpg" alt="Imagem condicional" />
       </picture>
+    </section>
+    <!-- Depoimentos -->
+    <section id="videos-section">
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3NkU2JqZKGQ?si=oZTuqs4ZczUzXRrs" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+      
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3NkU2JqZKGQ?si=oZTuqs4ZczUzXRrs" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+      
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3NkU2JqZKGQ?si=oZTuqs4ZczUzXRrs" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
     </section>
     <!-- Cronometro -->
     <div id="countdown-container"></div>
