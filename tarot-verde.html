@@ -168,12 +168,10 @@
     <!-- Bullet points visual -->
     <section id="visual-bulletpoints">
       <h2>
-        Template únicos e exclusivos 100% editáveis <br />
-        em 2 cores diferentes (verde e azul)
+        Veja os benefícios que irá receber:
       </h2>
       <h3>
-        Mais de 300 artes em 3 formatos diferente 1080x1080 (Feed) - 1080x1350
-        (Retrato) - 1080x1920 (Stories) + Legendas Prontas + 40 Destaques
+        150 artes prontas na <span class="green">COR VERDE</span> em 3 formatos diferente <span class="bold">1080x1080 (Feed) - 1080x1350 (Retrato) -  1080x1920 (Stories)</span> + 40 Capas de Destaques
       </h3>
       <picture>
         <!-- Imagem para telas com largura de até 768px -->
@@ -192,29 +190,37 @@
         <img src="imagem-padrao.jpg" alt="Imagem condicional" />
       </picture>
     </section>
+    <!-- Visual bulletpoints Azul -->
+    <section id="blue-visual-bulletpoints">
+      <h3>
+        150 artes prontas na <span class="blue">COR AZUL</span> em 3 formatos diferente <span class="bold">1080x1080 (Feed) - 1080x1350 (Retrato) -  1080x1920 (Stories)</span> + 40 Capas de Destaques
+      </h3>
+      <picture>
+        <!-- Imagem para telas com largura de até 768px -->
+        <source
+          media="(max-width: 768px)"
+          srcset="./assets/blue-bulletpoints/blue-bulletpoints-mobile.png"
+        />
+
+        <!-- Imagem para telas com largura acima de 768px -->
+        <source
+          media="(min-width: 769px)"
+          srcset="/assets/blue-bulletpoints/blue-bulletpoints.png"
+        />
+
+        <!-- Fallback caso as media queries não funcionem -->
+        <img src="imagem-padrao.jpg" alt="Imagem condicional" />
+      </picture>
+    </section>
     <!-- Depoimentos -->
     <section id="videos-section">
       <h2>O que as porfissionais tem a dizer sobre o Presença Digital Mística:</h2>
       <div class="video-container">
-        <iframe width="330" height="186" src="https://www.youtube.com/embed/3NkU2JqZKGQ?si=oZTuqs4ZczUzXRrs" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-        encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-        </iframe>
+        <iframe width="330" height="186" src="https://www.youtube.com/embed/i4uPNrldB4I?si=Z9H_kRyrtSQNS9Jj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <iframe width="330" height="186" src="https://www.youtube.com/embed/3NkU2JqZKGQ?si=oZTuqs4ZczUzXRrs" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-        encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-        </iframe>
+        <iframe width="330" height="186" src="https://www.youtube.com/embed/PGh_-2l6QlM?si=VZQVLD1sW9VCe7Ac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <iframe width="330" height="186" src="https://www.youtube.com/embed/3NkU2JqZKGQ?si=oZTuqs4ZczUzXRrs" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-        encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-        </iframe>
-
-
+        <iframe width="330" height="186" src="https://www.youtube.com/embed/SUPFPUWUKiw?si=X-hwmLrsY4R3QPJn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </section>
     <!-- Cronometro -->
@@ -248,9 +254,10 @@
         <div class="super-offer-text">
           <span class="best-seller">mais vendido</span>
           <h2>Super oferta!</h2>
-          <h3>pacote SUPER PREMIUM com COMBO EXCLUSIVO!</h3>
+          <p>pacote SUPER PREMIUM com COMBO EXCLUSIVO!</p>
+          <span class="forever-access">Acesso vitalício</span>
         </div>
-        <span class="forever-access">Acesso vitalício</span>
+
         <ul>
           <li>
             <span class="material-symbols-outlined"> check </span>

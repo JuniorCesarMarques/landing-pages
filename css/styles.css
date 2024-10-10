@@ -136,12 +136,58 @@ h3 {
   text-align: center;
 }
 
+.green {
+  color: #295f4a;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 #visual-bulletpoints h2 {
   width: 100%;
   color: white;
   background: #295f4a;
   padding: 20px;
   margin-bottom: 20px;
+}
+
+#visual-bulletpoints h3 {
+  font-size: 16px;
+}
+
+/* Visual bulletpoints azul */
+#blue-visual-bulletpoints {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#blue-visual-bulletpoints h3 {
+  font-size: 16px;
+}
+
+.blue {
+  color: #1d487e;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#visual-bulletpoints h2 {
+  width: 100%;
+  color: white;
+  background: #295f4a;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#visual-bulletpoints h3 {
+  font-size: 16px;
 }
 
 /* Bulletpoints */
@@ -214,16 +260,7 @@ h3 {
 
 .offer-container {
   position: relative;
-}
-
-.forever-access {
-  color: white;
-  padding: 5px;
-  background: purple;
-  position: absolute;
-  top: 120px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
 .super-offer-text {
@@ -231,13 +268,28 @@ h3 {
   padding: 20px;
   color: white;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.super-offer-text p{
+  margin: 0 50px;
+  
+}
+
+.forever-access {
+  color: white;
+  padding: 5px;
+  background: purple;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
 .best-seller {
   transform: rotate(-35deg);
-  padding: 10px;
+  padding: 5px;
   background: yellow;
   color: black;
   text-transform: uppercase;
@@ -245,9 +297,11 @@ h3 {
   font-size: 14px;
   position: absolute;
   top: 20px;
-  left: -50px;
+  left: -55px;
   width: 200px;
+
 }
+
 
 .simple-offer-container,
 .offer-container {
@@ -460,13 +514,6 @@ h3 {
     gap: 20px;
   }
 
-  .super-offer-text h2 {
-    margin: 10px 0;
-  }
-
-  .forever-access {
-    top: 135px;
-  }
 
   .offer-container,
   .simple-offer-container {
