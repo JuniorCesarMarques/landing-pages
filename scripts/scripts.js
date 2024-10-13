@@ -207,28 +207,28 @@ const countdown = new CountdownTimer("countdown-container", 14 * 60 + 47);
 
 
 // Data
-const months = [
-  "Janeiro",
-  "Fevereiro",
-  "Março",
-  "Abril",
-  "Maio",
-  "Junho",
-  "Julho",
-  "Agosto",
-  "Setembro",
-  "Outubro",
-  "Novembro",
-  "Dezembro",
-];
+// const months = [
+//   "Janeiro",
+//   "Fevereiro",
+//   "Março",
+//   "Abril",
+//   "Maio",
+//   "Junho",
+//   "Julho",
+//   "Agosto",
+//   "Setembro",
+//   "Outubro",
+//   "Novembro",
+//   "Dezembro",
+// ];
 
-const fullDate = new Date();
-const year = fullDate.getFullYear();
-const index = fullDate.getMonth();
-const month = months[index];
-const header = document.querySelector('#header h2');
+// const fullDate = new Date();
+// const year = fullDate.getFullYear();
+// const index = fullDate.getMonth();
+// const month = months[index];
+// const header = document.querySelector('#header h2');
 
-header.textContent = `${header.textContent} ${month}/${year}`
+// header.textContent = `${header.textContent} ${month}/${year}`
 
 // ---------------------- // --------------------------- // -------------
 
