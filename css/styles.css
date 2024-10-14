@@ -46,7 +46,6 @@ h3 {
     font-size: 20px;
     padding: 0 10px;
   }
-
 }
 
 /* contagem regressiva */
@@ -148,7 +147,6 @@ h3 {
   color: white;
 }
 
-
 /* Problema */
 #problem img {
   display: block;
@@ -172,13 +170,22 @@ h3 {
 }
 
 /* Promise */
-#promise img{
+#promise img {
   display: block;
   margin: 0 auto;
   width: 500px;
 }
 
+#promise h3 {
+  font-weight: bold;
+  line-height: 26px;
+}
+
 @media screen and (max-width: 768px) {
+  #promise h3 {
+    font-size: 20px;
+  }
+
   #promise img {
     width: 330px;
   }
@@ -201,7 +208,7 @@ h3 {
   align-items: center;
 }
 
-.check-points-list  {
+.check-points-list {
   background-color: #42ae30;
   color: white;
   border-radius: 50%;
@@ -216,7 +223,6 @@ h3 {
     scale: 0.8;
   }
 }
-
 
 /* Visual bulletpoints */
 #visual-bulletpoints {
@@ -305,7 +311,6 @@ h3 {
   margin: 0 30px;
 }
 
-
 .bulletpoints-container ul {
   margin: 0 auto;
   display: flex;
@@ -361,8 +366,13 @@ h3 {
 }
 
 /* Bonus */
-
-
+#bonus h2 {
+  text-align: center;
+  margin: 30px;
+  text-decoration: underline;
+  text-decoration-color: #0571d3;
+  text-decoration-thickness: 5px;
+}
 
 /* Oferta */
 
@@ -386,9 +396,8 @@ h3 {
   /* overflow: hidden; */
 }
 
-.super-offer-text p{
+.super-offer-text p {
   margin: 0 50px;
-  
 }
 
 .forever-access {
@@ -400,7 +409,6 @@ h3 {
   left: 50%;
   transform: translateX(-50%);
 }
-
 
 .best-seller {
   transform: rotate(-35deg);
@@ -414,9 +422,7 @@ h3 {
   top: 20px;
   left: -55px;
   width: 200px;
-
 }
-
 
 .simple-offer-container,
 .offer-container {
@@ -436,7 +442,6 @@ h3 {
   font-size: 30px;
 }
 
-
 .offer-container ul,
 .simple-offer-container ul {
   display: inline-block;
@@ -447,8 +452,8 @@ h3 {
   margin-top: 30px;
 }
 
-.offer-container ul span, 
-.simple-offer-container ul span{
+.offer-container ul span,
+.simple-offer-container ul span {
   color: white;
   background: #42ae30;
   border-radius: 3px;
@@ -583,7 +588,7 @@ h3 {
 
 #summary h3 {
   color: white;
-  padding: 20px; 
+  padding: 20px;
   margin-bottom: 15px;
   width: 700px;
 }
@@ -642,7 +647,6 @@ h3 {
   #offer {
     gap: 20px;
   }
-
 
   .offer-container,
   .simple-offer-container {
