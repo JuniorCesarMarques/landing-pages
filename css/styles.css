@@ -31,6 +31,20 @@ h3 {
   font-weight: normal;
 }
 
+@media screen and (max-width: 768px) {
+  h3 {
+    margin: 0 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+}
+
 /* contagem regressiva */
 #countdown-container {
   display: flex;
@@ -519,7 +533,6 @@ h3 {
 
 /* Summary */
 .summary {
-  line-height: 25px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -527,7 +540,7 @@ h3 {
   gap: 20px;
 }
 
-.summary p {
+.summary h3 {
   color: white;
   padding: 20px; 
   margin-bottom: 15px;
@@ -535,7 +548,7 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-  .summary p {
+  .summary h3 {
     width: 330px;
   }
 }
@@ -575,14 +588,6 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-  h3 {
-    margin: 0 10px;
-  }
-  /* Header */
-  h2 {
-    font-size: 20px;
-  }
-
   #header {
     font-size: 20px;
   }
