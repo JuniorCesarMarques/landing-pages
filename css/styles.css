@@ -20,33 +20,6 @@ sup {
   font-weight: bold;
 }
 
-.check-points-list  {
-  background-color: #42ae30;
-  color: white;
-  border-radius: 50%;
-  scale: 0.8;
-}
-
-.ul-check {
-  margin: 0 auto;
-  width: 330px;
-  font-size: 13px;
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  list-style: none;
-}
-
-.li-check {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-
-
-
-
 h2 {
   font-size: 30px;
   text-transform: uppercase;
@@ -160,6 +133,39 @@ h3 {
 /* Promise */
 #promise img{
   width: 100%;
+}
+
+/* Checklist */
+.ul-check {
+  margin: 0 auto;
+  width: 700px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style: none;
+}
+
+.li-check {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.check-points-list  {
+  background-color: #42ae30;
+  color: white;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .ul-check {
+    width: 330px;
+    font-size: 13px;
+  }
+  .check-points-list {
+    scale: 0.8;
+  }
 }
 
 
@@ -532,6 +538,15 @@ h3 {
 
 .summary p {
   color: white;
+  padding: 20px; 
+  margin-bottom: 15px;
+  width: 600px;
+}
+
+@media screen and (max-width: 768px) {
+  .summary p {
+    width: 330px;
+  }
 }
 
 /* Faq Section */
