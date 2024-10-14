@@ -24,9 +24,13 @@ sup {
   background-color: #42ae30;
   color: white;
   border-radius: 50%;
+  scale: 0.8;
 }
 
 .ul-check {
+  margin: 0 auto;
+  width: 330px;
+  font-size: 13px;
   gap: 10px;
   display: flex;
   flex-direction: column;
@@ -36,6 +40,7 @@ sup {
 
 .li-check {
   display: flex;
+  gap: 5px;
   align-items: center;
 }
 
