@@ -163,6 +163,17 @@ h3 {
   border: none;
   background: #42ae30;
   color: white;
+  animation: animationButton 1s linear infinite alternate;
+}
+
+@keyframes animationButton {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.05);
+  }
 }
 
 /* Problema */
