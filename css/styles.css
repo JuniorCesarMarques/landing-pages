@@ -442,26 +442,14 @@ h3 {
   width: 200px;
 }
 
-.simple-offer-container,
 .offer-container {
   text-align: center;
   background: #f4eee7;
   width: 550px;
 }
 
-.simple-offer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
 
-.simple-offer {
-  font-size: 30px;
-}
-
-.offer-container ul,
-.simple-offer-container ul {
+.offer-container ul {
   display: inline-block;
   margin: 20px auto;
 }
@@ -470,34 +458,18 @@ h3 {
   margin-top: 30px;
 }
 
-.offer-container ul span,
-.simple-offer-container ul span {
+.offer-container ul span {
   color: white;
   background: #42ae30;
   border-radius: 3px;
 }
 
-.simple-offer-container ul .close {
-  background: red;
-  color: white;
-}
 
-.offer-container li,
-.simple-offer-container li {
+.offer-container li {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 5px;
-}
-
-.simple-offer-buy-button {
-  border: none;
-  padding: 10px;
-  background: #295f4a;
-  margin: 0 auto;
-  color: white;
-  font-size: 18px;
-  text-transform: uppercase;
 }
 
 .prices-container {
