@@ -4,11 +4,16 @@
   src: url("../assets/fonts/Prompt-BoldItalic.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif, system-ui;
+  font-family: "Montserrat", serif;
 }
 
 a {
@@ -34,7 +39,6 @@ h2 {
 }
 
 h3 {
-  margin: 0 200px;
   font-size: 25px;
   font-weight: normal;
 }
@@ -42,7 +46,6 @@ h3 {
 @media screen and (max-width: 768px) {
   h3 {
     margin: 0 10px;
-    line-height: 20px;
   }
 
   h2 {
@@ -89,6 +92,7 @@ h3 {
 #header h2 {
   font-weight: normal;
   font-size: 20px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
@@ -108,6 +112,10 @@ h3 {
   text-align: center;
 }
 
+.headline {
+  text-transform: uppercase;
+}
+
 #headline-section h2 {
   margin-top: 30px;
 }
@@ -115,6 +123,7 @@ h3 {
 #headline-section h3 {
   font-weight: normal;
   font-size: 35px;
+  max-width: 1000px;
 }
 
 .sub-headline {
@@ -166,6 +175,7 @@ h3 {
   border-radius: 10px;
   background: #42ae30;
   color: white;
+  font-weight: bold;
   animation: animationButton 1s linear infinite alternate;
 }
 
@@ -202,7 +212,18 @@ h3 {
   padding: 30px 0;
 }
 
-@media screen and (min-width: 769px) {
+.info-container h3 {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+@media screen and (max-width: 768px) {
+  .info-container h3 {
+    max-width: 330px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   #problem img {
     width: 100%;
   }
@@ -214,6 +235,10 @@ h3 {
 }
 
 /* Promise */
+#promise {
+  margin: 20px 0;
+}
+
 #promise img {
   display: block;
   margin: 0 auto;
@@ -222,7 +247,6 @@ h3 {
 
 #promise h3 {
   font-weight: bold;
-  line-height: 26px;
 }
 
 @media screen and (max-width: 768px) {
