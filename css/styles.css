@@ -1,4 +1,8 @@
 /* Global */
+@font-face {
+  font-family: "Prompt", sans-serif;
+  src: url("../assets/fonts/Prompt-BoldItalic.ttf") format("truetype");
+}
 
 * {
   margin: 0;
@@ -52,9 +56,9 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #282c34;
+  background-color: red;
   padding: 20px;
-  color: #ffffff;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -84,7 +88,7 @@ h3 {
 
 #header h2 {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -121,28 +125,27 @@ h3 {
   position: relative;
   width: 100%;
   height: 100%;
-  padding-bottom: 56.25%; 
-  margin: 0 auto; 
+  padding-bottom: 56.25%;
+  margin: 0 auto;
 }
 
 .headline-video-container iframe {
   position: absolute;
-  left: 10%;
-  width: 80%;
-  height: 80%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
   border: 0;
 }
 
-
 @media screen and (max-width: 768px) {
   .sub-headline {
-    font-size: 18px !important;
+    font-size: 14px !important;
     line-height: 18px !important;
   }
 
   #headline-section h3 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 25px;
   }
 }
 
@@ -157,12 +160,20 @@ h3 {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-size: 18px;
-  padding: 10px;
+  padding: 10px 40px;
   cursor: pointer;
   border: none;
+  border-radius: 10px;
   background: #42ae30;
   color: white;
   animation: animationButton 1s linear infinite alternate;
+}
+
+@media screen and (max-width: 768px) {
+  .buy-button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
 }
 
 @keyframes animationButton {
@@ -189,6 +200,12 @@ h3 {
   color: white;
   background: #295f4a;
   padding: 30px 0;
+}
+
+@media screen and (min-width: 769px) {
+  #problem img {
+    width: 100%;
+  }
 }
 
 /* Solução */
@@ -397,12 +414,94 @@ h3 {
 }
 
 /* Bonus */
+
+.bonus-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bonus-container .img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.bonus-container .img-container p {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: purple;
+  text-align: center;
+}
+
+.bonus-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 170px;
+}
+
+/* Numero 3 */
+.bonus-title .box-1 {
+  font-size: 180px;
+  color: orange;
+}
+
+/* texto */
+.bonus-title .box-2 {
+  font-size: 60px;
+}
+
+.bonus-title .box-2 p {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.bonus-title .box-1,
+.bonus-title .box-2 p {
+  font-family: "Prompt";
+  font-style: italic;
+}
+
+.bonus-title .box-2 p:first-child {
+  color: orange;
+}
+
+.super-bonus-title-container {
+  display: flex;
+  flex-direction: column;
+}
+
 #bonus h2 {
   text-align: center;
   margin: 30px;
   text-decoration: underline;
   text-decoration-color: #0571d3;
   text-decoration-thickness: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .bonus-title {
+    height: 130px;
+  }
+
+  .bonus-title .box-1 {
+    font-size: 140px;
+  }
+
+  .bonus-title .box-2 {
+    font-size: 30px;
+  }
+
+  .bonus-title .box-2 p {
+    height: 25px;
+  }
 }
 
 /* Oferta */
@@ -417,6 +516,10 @@ h3 {
 .offer-container {
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
+  text-align: center;
+  background: #f4eee7;
+  width: 550px;
 }
 
 .super-offer-text {
@@ -433,10 +536,11 @@ h3 {
 
 .forever-access {
   color: white;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 10px;
   background: purple;
   position: absolute;
-  bottom: -15px;
+  bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -455,13 +559,6 @@ h3 {
   width: 200px;
 }
 
-.offer-container {
-  text-align: center;
-  background: #f4eee7;
-  width: 550px;
-}
-
-
 .offer-container ul {
   display: inline-block;
   margin: 20px auto;
@@ -476,7 +573,6 @@ h3 {
   background: #42ae30;
   border-radius: 3px;
 }
-
 
 .offer-container li {
   display: flex;
@@ -511,6 +607,13 @@ h3 {
 
 .one-payment {
   font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .offer-container {
+    max-width: 410px;
+    margin: 0 5px;
+  }
 }
 
 /* Guarantee */
@@ -640,22 +743,6 @@ h3 {
 @media screen and (max-width: 768px) {
   #header {
     font-size: 20px;
-  }
-
-  /* Botão */
-  .buy-button {
-    font-size: 12px;
-  }
-
-  /* Oferta */
-  #offer {
-    gap: 20px;
-  }
-
-  .offer-container,
-  .simple-offer-container {
-    width: 330px;
-    margin: 0;
   }
 
   /* Guarantee */
