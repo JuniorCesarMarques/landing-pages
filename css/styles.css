@@ -302,7 +302,6 @@ h3 {
 .bullet-points-container div:nth-child(4){
   display: flex;
   justify-content: center;
-  background-color: #f1ebe3;
   padding: 10px;
 }
 
