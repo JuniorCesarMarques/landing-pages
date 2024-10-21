@@ -267,9 +267,10 @@ h3 {
 }
 
 /* Bulletpoints */
-.bullet-points-container div:nth-child(1) img{
-  display: block;
-  margin: 0 auto 10px;
+.bullet-points-container .first-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 
 .bullet-points-container div:nth-child(2){
